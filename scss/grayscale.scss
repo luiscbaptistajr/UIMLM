@@ -59,6 +59,11 @@ a {
   }
 }
 
+.mx-auto {margin: 0 auto !important}
+.ml-auto {
+    margin-left: unset!important;
+}
+
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -99,6 +104,7 @@ a {
       }
     }
   }
+
   @media(min-width:992px) {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -137,7 +143,7 @@ a {
   text-align: center;
 
   color: white;
-  background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
+  background: url('../img/wallpaper.png') no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;

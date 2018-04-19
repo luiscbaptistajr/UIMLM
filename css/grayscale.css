@@ -51,6 +51,14 @@ a:focus, a:hover {
   color: #1d9b6c;
 }
 
+.mx-auto {
+  margin: 0 auto !important;
+}
+
+.ml-auto {
+  margin-left: unset !important;
+}
+
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
@@ -124,7 +132,7 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/wallpaper.png") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
