@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'mixins.scss';
+@import 'portfolio.scss';
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -60,9 +61,7 @@ a {
 }
 
 .mx-auto {margin: 0 auto !important}
-.ml-auto {
-    margin-left: unset!important;
-}
+.ml-auto {margin-left: unset!important}
 
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -130,6 +129,101 @@ a {
         color: white;
       }
     }
+  }
+}
+
+#subscribe {
+  background: #f9f9f9;
+  padding: 3em 0;
+
+  .container:before {
+    content: '';
+    display: table;
+  }
+
+  h3 {
+    float: left;
+    width: 30%;
+    top: 10px;
+    font-size: 26px;
+    margin-bottom: 0;
+    position: relative;
+
+    label {
+      font-weight: 300;
+      /* display: inline-block; */
+      max-width: 100%;
+      margin-bottom: 5px;
+      /* font-weight: bold; */
+    }
+
+
+  form {
+    width: 60%;
+    float: right;
+    position: relative;
+
+    #fh5co-icon {
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      left: 15px;
+      font-size: 20px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      background: #ededed;
+      border: none;
+      padding-left: 50px;
+      padding-right: 170px;
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: -4px;
+      height: 54px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      font-size: 20px;
+      font-weight: 300;
+      width: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #subscribe {
+    h3 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    form {
+      width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+  #subscribe form #fh5co-icon {
+    position: absolute;
+    top: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #subscribe form input[type="email"] {
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #subscribe form input[type="submit"] {
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
 }
 
@@ -298,3 +392,4 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
