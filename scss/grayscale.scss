@@ -73,7 +73,7 @@ a {
   text-transform: uppercase;
 
   border-bottom: 1px solid fade-out(white, .7);
-  background-color: black;
+  background-color: #8cc73f;
   .navbar-toggler {
     font-size: 14px;
 
@@ -426,7 +426,7 @@ a {
   height: auto;  
 }
 
-.download-section {
+.testimonial-section {
   color: white;
   background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
   background-color: black;
@@ -434,6 +434,16 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  .flexslider {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    .flex-direction-nav {
+      display: none;
+    }
+  }
 }
 
 #map {
@@ -614,3 +624,19 @@ img::-moz-selection {
   background: transparent;
 }
 
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
+.portfolio-modal {
+  .close-modal {
+    .lr {
+      background-color: #fff;
+      height: 35px;
+
+      .rl {background-color: #fff; height: 35px;}
+    }
+
+  }
+}
